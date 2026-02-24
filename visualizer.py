@@ -552,7 +552,7 @@ class Visualizer:
             labels=languages,
             colors=colors,
             autopct=autopct_format,
-            startangle=90,
+            startangle=0,
             pctdistance=0.82 if donut else 0.65,
             wedgeprops={'width': 0.4 if donut else 1, 'edgecolor': 'white',
                        'linewidth': 1, 'alpha': 0.9},
