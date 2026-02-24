@@ -545,7 +545,7 @@ class Visualizer:
         colors = [self._get_color(lang) if lang != 'Other' else '#d0d0d0' for lang in languages]
 
         def autopct_format(pct):
-            return f'{pct:.1f}%' if pct > 3 else ''
+            return f'{pct:.1f}%' if pct > 1 else ''
 
         wedges, texts, autotexts = ax.pie(
             values,
