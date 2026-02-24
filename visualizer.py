@@ -531,7 +531,7 @@ class Visualizer:
             print(f"No data to visualize for {title}")
             return
 
-        top_n = min(8, len(data))
+        top_n = 5
         top_data = data[:top_n]
 
         if len(data) > top_n:
