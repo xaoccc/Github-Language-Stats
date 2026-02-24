@@ -545,7 +545,7 @@ class Visualizer:
         colors = [self._get_color(lang) if lang != 'Other' else '#d0d0d0' for lang in languages]
 
         def autopct_format(pct):
-            return f'{pct:.1f}%' if pct > 2 else ''
+            return f'{pct:.1f}%' if pct > 1 else ''
 
         wedges, texts, autotexts = ax.pie(
             values,
@@ -556,7 +556,7 @@ class Visualizer:
             pctdistance=0.82 if donut else 0.65,
             wedgeprops={'width': 0.4 if donut else 1, 'edgecolor': 'white',
                        'linewidth': 1, 'alpha': 0.9},
-            textprops={'fontweight': 'bold', 'fontsize': 8}
+            textprops={'fontweight': 'bold', 'fontsize': 9}
         )
 
         for wedge in wedges:
